@@ -1,0 +1,193 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #eaeaea; /* Light gray background */
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: #ffffff; /* White background for the container */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d0d0d0; /* Lighter border */
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  color: #2c3e50; /* Dark blue-gray */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header svg {
+  width: 40px;
+  height: 40px;
+  fill: #2980b9; /* Bright blue */
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Add transition to SVG */
+}
+
+.header svg:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Section */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  font-size: 1.125rem;
+  color: #34495e; /* Darker blue-gray */
+  text-align: center;
+}
+
+section h3 {
+  font-size: 1rem;
+  color: #7f8c8d; /* Soft gray */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+section div {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue-gray */
+  text-align: center;
+}
+
+/* Form */
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form_container input.addTask {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d0d0d0; /* Lighter border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Add shadow transition */
+}
+
+.form_container input.addTask:focus {
+  border-color: #2980b9; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Light blue shadow on focus */
+  outline: none;
+}
+
+.form_container button {
+  background: #27ae60; /* Green background */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s; /* Add transform transition */
+}
+
+.form_container button:hover {
+  background: #219150; /* Darker green */
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.form_container button svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  margin-left: 5px;
+}
+
+/* Todo List */
+#Todolist {
+  list-style: none;
+  padding: 0;
+}
+
+#Todolist li {
+  background: #ffffff; /* White background */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s, transform 0.3s; /* Add transform transition */
+}
+
+#Todolist li:hover {
+  background: #f0f9ff; /* Light blue on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+#Todolist p {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+#Todolist li div {
+  align-self: flex-end;
+  display: flex;
+  gap: 10px;
+}
+
+#Todolist li div button {
+  border: none;
+  cursor: pointer; /* Ensuring pointer cursor */
+  transition: color 0.3s; /* Add transition for color change */
+}
+
+#Todolist li div button.completed {
+  color: #27ae60; /* Green for completed */
+}
+
+#Todolist li div button.deleted {
+  color: #e74c3c; /* Red for deleted */
+}
+
+#Todolist li div button.completed:hover {
+  color: #1f7a3b; /* Darker green on hover */
+}
+
+#Todolist li div button.deleted:hover {
+  color: #c0392b; /* Darker red on hover */
+}
+
+
+

@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Very light gray-blue background */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login Container */
+#loginContainer {
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width for the login container */
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+}
+
+/* Label Styles */
+#loginContainer label {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 15px; /* Space between label groups */
+}
+
+/* Span Styles */
+#loginContainer span {
+    margin-bottom: 5px; /* Space between label and input */
+    color: #2c3e50; /* Dark blue-gray for labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input Styles */
+#loginContainer input[type="text"],
+#loginContainer input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #d0d0d0; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+#loginContainer input[type="text"]:focus,
+#loginContainer input[type="password"]:focus {
+    border-color: #2980b9; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Light blue shadow on focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Login Button Styles */
+#loginbtn {
+    background: #2980b9; /* Blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+    width: 100%;
+}
+
+#loginbtn:hover {
+    background: #1c598a; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    #loginContainer {
+        width: 100%; /* Full width on small screens */
+        padding: 15px; /* Reduced padding */
+    }
+
+    #loginContainer input[type="text"],
+    #loginContainer input[type="password"],
+    #loginbtn {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
